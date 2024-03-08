@@ -1,0 +1,40 @@
+name: SpectatorMode
+main: ru.ndsmc.spectatormode.SpectatorMode
+
+version: ${version}
+
+api-version: '1.20'
+folia-supported: true
+softdepend: [ LuckPerms ]
+load: POSTWORLD
+
+commands:
+  s:
+    description: The main command for this plugin
+permissions:
+  spectator.*:
+    description: Give access to the entire permission node
+    children:
+      spectatormode.use: true
+      spectatormode.enable: true
+      spectatormode.bypass: true
+      spectatormode.force: true
+      spectatormode.toggle: true
+  spectatormode.use:
+    description: Be able to use the /s command
+    default: op
+  spectatormode.enable:
+    description: Be able to enable and disable spectator mode from the /s command
+    default: op
+  spectatormode.bypass:
+    description: Be able to bypass the y-level and block restrictions
+    default: op
+  spectatormode.force:
+    description: Be able to force other players into and out of spectator mode
+    default: op
+  spectatormode.toggle:
+    description: Be able to use the /s effect command
+    default: op
+  spectatormode.reload:
+    description: Be able to reload the config
+    default: op

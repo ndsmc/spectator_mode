@@ -19,14 +19,14 @@ data:
     Water bubbles: 300
     Mobs:
       edf02864-427b-4d91-b73b-8e3f8d189d56:
-      - false
-      - true
+        - false
+        - true
       d5f6dbc8-d610-4dda-a412-88e8f1d1d36e:
-      - false
-      - true
+        - false
+        - true
       b8090f71-3e3e-4bf6-a080-8c42d02c22a2:
-      - false
-      - true
+        - false
+        - true
     Fire ticks: -20
     Location:
       ==: org.bukkit.Location

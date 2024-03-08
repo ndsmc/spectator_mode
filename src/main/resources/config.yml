@@ -1,12 +1,3 @@
-#   _____ __  __ _____     _____                 _        _               __  __           _
-#  / ____|  \/  |  __ \   / ____|               | |      | |             |  \/  |         | |
-# | (___ | \  / | |__) | | (___  _ __   ___  ___| |_ __ _| |_ ___  _ __  | \  / | ___   __| | ___
-#  \___ \| |\/| |  ___/   \___ \| '_ \ / _ \/ __| __/ _` | __/ _ \| '__| | |\/| |/ _ \ / _` |/ _ \
-#  ____) | |  | | |       ____) | |_) |  __/ (__| || (_| | || (_) | |    | |  | | (_) | (_| |  __/
-# |_____/|_|  |_|_|      |_____/| .__/ \___|\___|\__\__,_|\__\___/|_|    |_|  |_|\___/ \__,_|\___|
-#                               | |
-#                               |_|
-
 # If the command /s is enabled (/s enable overrules this)
 enabled: true
 
@@ -42,7 +33,7 @@ disallowed-blocks: [ ]
 # How close a player can get to a block, to be used with disallow-all-blocks (percentage of block), adjust according to ping. integer
 bubble-size: 35
 
-# Whether to make it so players can not go past a certain distance in spectator mode. The permission smpspectator.bypass bypasses this
+# Whether to make it so players can not go past a certain distance in spectator mode. The permission spectatormode.bypass bypasses this
 enforce-distance: false
 # See above (blocks) integer
 distance: 64
@@ -52,7 +43,7 @@ minimum-health: 0
 
 # Prevents players from using the spectator teleport hot bar
 prevent-teleport: false
-# Prevents these commands from being executed unless you have the smpspectator.bypass permission. Example list: [back, return, home, homes, tpaccept, tpyes, warp, warps]
+# Prevents these commands from being executed unless you have the spectatormode.bypass permission. Example list: [back, return, home, homes, tpaccept, tpyes, warp, warps]
 bad-commands: [ ]
 
 # If this is above 0, the player has to be still for the next X ticks (20 a second normally) after preforming the command to enter spectator mode. int
@@ -66,9 +57,6 @@ disable-switching-message: false
 
 # If this is true, you won't get the survival-mode-message on join, if the server sent you back into survival
 silence-survival-mode-message-on-join: true
-
-# If this is true the message with a new version, or up to date message will appear
-update-checker: true
 
 # If a hostile mob is within this distance, the player will not be allowed into spectator mode. 0 is off.
 closest-hostile: 0
