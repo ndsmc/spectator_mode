@@ -102,11 +102,10 @@ public class State {
     }
 
     public void resetPlayer(Player player) {
-        // Error: Scheduling chunk load off-main
-        player.teleportAsync(getPlayerLocation());
         player.setFireTicks(getFireTicks());
         player.addPotionEffects(getPotionEffects());
         player.setRemainingAir(getWaterBubbles());
+        player.teleportAsync(getPlayerLocation());
     }
 
     private void prepareMobs(Player player) {
